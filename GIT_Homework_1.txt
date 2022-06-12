@@ -74,6 +74,7 @@ JSON
  press the button ----> Commit changes
  
  16. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+ press the button ----> Edit file
  bug_report.json ---> edit this file
  {
   "Defect_ID" : 1,
@@ -94,9 +95,8 @@ JSON
   "AtachedFiles" : "no"
  }
  
- 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейc
  press the button ----> Commit changes
- 
  18. Синхронизировать внешний и локальный репозиторий JSON
  В Terminal
  git pull
