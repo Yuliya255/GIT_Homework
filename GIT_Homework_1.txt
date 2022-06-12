@@ -66,8 +66,11 @@ JSON
 
  14. На веб интерфейсе создать файл bug_report.json
  github -> JSON ---> Add file name ---> bug_report.json
+ press the button ----> Commit file
  
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+ press the button ----> Edit file
+ add string -----> bug_report
  press the button ----> Commit changes
  
  16. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
