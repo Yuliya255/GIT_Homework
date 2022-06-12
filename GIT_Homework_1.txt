@@ -1,0 +1,99 @@
+JSON
+ 1. Создать внешний репозиторий c названием JSON
+ Зайти на github ---> Create a new repository
+ 
+ 2. Клонировать репозиторий JSON на локальный компьютер
+ В Terminal
+ cd git
+ git clone git@github.com:Yuliya255/JSON.git
+
+ 3. Внутри локального JSON создать файл “new.json”
+ cd JSON
+ touch new.json
+
+ 5. Добавить файл под гит
+ git add new.json
+  
+ 6. Закоммитить файл
+ git commit -m "add file json"
+
+ 7. Отправить файл на внешний GitHub репозиторий
+ git push
+ 
+ 8. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON
+ { 
+  "name" : "Yuliya",
+  "surname" : "Ostapchuk",
+  "age" : 29,
+  "pets" : 0,
+  "salary" : 300
+ }
+ 9.Отправить изменения на внешний репозиторий
+ В Terminal
+ git add new.json
+ git commit -m "add file"
+ git push
+ 
+ 10. Создать файл preferences.json
+ touch preferences.json
+ 
+ 11. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON
+ vim preferences.json
+ {
+	"favoriteMovie" : "The Pursuit of Happyness",
+	"favoriteSerial" : "Friends",
+	"favoriteFood" : "pizza",
+	"favoriteSeason" : "Spring",
+	"Country" : "Canada"
+}
+ 12. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+ touch sklls.json
+ vim sklls.json
+ {
+	"skill" : "Bash",
+	"skill" : "Git",
+	"skill" : "Postman",
+	"skill" : "Web testing",
+	"skill" : "JMeter",
+	"skill" : "SQL",
+	"skill" : "Android Studio",
+	"skill" : "Charles"
+ }
+ 13. Отправить сразу 2 файла на внешний репозиторий
+ git add .
+ git commit -m "add new file"
+ git push
+
+ 14. На веб интерфейсе создать файл bug_report.json
+ github -> JSON ---> Add file name ---> bug_report.json
+ 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+ press the button ----> Commit changes
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+ bug_report.json ---> edit this file
+ {
+  "Defect_ID" : 1,
+  "Summary" : "The register button on the main page of the site does not work when clicked",
+  "STR" : {
+      "one" : "Go to the main page of the site",
+      "two" : "Click the REGISTER button"
+ },
+  "Project" : "Test",
+  "Severety" : "critical",
+  "Priority" : "high",
+  "Status" : "assigned",
+  "Author" : "Yuliya Ostapchuk",
+  "Enviroments" : {
+      "OS" : "Ubuntu 22.04 LTS",
+      "browser" : "Version 102.0.5005.61 (Official Build) (64-bit)"
+  },
+  "AtachedFiles" : "no"
+ }
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+ press the button ----> Commit changes
+ 
+ 18. Синхронизировать внешний и локальный репозиторий JSON
+ В Terminal
+ git pull
