@@ -1,0 +1,82 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+1)Создать репозиторий на github Git_branch
+2)В Terminal : 
+ git clone git@github.com:Yuliya255/Git_branch.git
+ git branch Postman
+ git branch Jmeter
+ git branch CheckLists 
+ git branch Bug_Reports
+ git branch SQL
+ git branch Charles
+ git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий
+git push origin Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+git checkout Bug_reports
+touch bug_report.txt
+vim bug_report.txt
+Bug Report
+ Defect_ID: 2.
+ Summary: The number of units in the basket is incorrectly displayed when adding goods to it.
+ STR: 1.Go to the site.
+      2.Choose a category and product.
+      3.Click on the "add to cart" button.
+      4.Press the "shopping cart" button.
+  Project: Test 1.
+  Severety: major.
+  Priority: medium.
+  Status: verified
+  Author: Yuliya Ostapchuk.
+  Enviroments: OS Ubuntu 22.04 LTS,browser Google Chrome Version 102.0.5005.61 (Official Build) (64-bit).
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git push --set-upstream origin Bug_Reports
+
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git merge Bug_Reports -m "merge"
+
+6. Запушить main на внешний репозиторий
+git push
+
+7. В ветке CheckLists набросать структуру чек листа
+touch checklist.txt
+vim checklist.txt
+ 
+Build: 1.0								
+Environment: Ubuntu 20.04.3 LTS							
+Test date: 12.02.22. - 14.02.22
+Tester: Ostapchuk							
+
+Registration check:							
+
+1. Fill in the required fields with the correct data, click the "register" button ----->Passed
+2. Leave the required fields blank click the "register" button ----->Passed
+3. Registration of a new user (special characters) ----->Passed												
+4. The user with the data  exists in the system ------>	Passed												
+5. Registration of a new user (Ukrainian letters) ----->Passed										
+6. Registration of a new user  (English letters)  ------>In progress	
+						
+8. Запушить структуру на внешний репозиторий
+git add checklist.txt ; git commit -m "checklist"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Нажать Pull Request 
+Выбрать ветки CheckLists и main
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main
+git pull
+
+
